@@ -58,10 +58,19 @@
   .whatsapp-float:hover { transform: scale(1.1); }
   .whatsapp-float i { margin-top: 16px; }
 
-  /* Prova social */
-  #prova-social h2, #prova-social h3 { margin-bottom: 20px; }
-  #prova-social p { font-size: 14px; }
-  #prova-social .depoimento { background:white; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+  /* Prova Social */
+  #prova-social { padding:60px 20px; background:#edf2f7; text-align:center; }
+  #prova-social h2 { font-size:32px; color:#1e3a8a; margin-bottom:40px; }
+  #prova-social .depoimentos { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1200px; margin:0 auto 40px auto; }
+  #prova-social .depoimento { background:#3b82f6; color:white; padding:25px; border-radius:15px; box-shadow:0 6px 15px rgba(0,0,0,0.15); }
+  #prova-social .depoimento h4 { margin-top:15px; font-weight:bold; }
+
+  #prova-social .logos { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:30px; margin-bottom:40px; }
+  #prova-social .logo { background:white; padding:15px 25px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); font-weight:bold; color:#1e3a8a; font-size:16px; min-width:120px; text-align:center; }
+
+  #prova-social .metricas { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; max-width:900px; margin:0 auto; }
+  #prova-social .metrica { background:#22c55e; color:white; border-radius:50%; padding:40px 20px; display:flex; flex-direction:column; justify-content:center; align-items:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+  #prova-social .metrica h3 { font-size:36px; margin-bottom:5px; }
 
   @media (max-width: 768px) {
     header { flex-direction: column; gap: 10px; padding: 15px 20px; }
@@ -126,45 +135,44 @@
 </section>
 
 <!-- Prova Social -->
-<section id="prova-social" style="padding:60px 20px; background:#f0f4f8; text-align:center;">
-  <h2 style="font-size:28px; color:#1e3a8a; margin-bottom:40px;">O que nossos clientes dizem</h2>
+<section id="prova-social">
+  <h2>O que nossos clientes dizem</h2>
   
-  <!-- Depoimentos -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1200px; margin:0 auto 40px auto;">
+  <div class="depoimentos">
     <div class="depoimento">
       <p>"Com a AutoRobots, conseguimos reduzir tarefas repetitivas em 70% e focar na estratégia."</p>
-      <h4 style="margin-top:15px; font-weight:bold;">– Ana Ferreira, CTO da TechSolutions</h4>
+      <h4>– Ana Ferreira, CTO da TechSolutions</h4>
     </div>
     <div class="depoimento">
       <p>"A integração com nossos sistemas foi impecável, agora todos os relatórios são automáticos."</p>
-      <h4 style="margin-top:15px; font-weight:bold;">– Lucas Pereira, Gerente de Operações da AutoParts</h4>
+      <h4>– Lucas Pereira, Gerente de Operações da AutoParts</h4>
     </div>
     <div class="depoimento">
       <p>"O bot de atendimento no WhatsApp aumentou a satisfação dos clientes e reduziu chamadas em 40%."</p>
-      <h4 style="margin-top:15px; font-weight:bold;">– Marina Santos, COO da LogiExpress</h4>
+      <h4>– Marina Santos, COO da LogiExpress</h4>
     </div>
   </div>
 
-  <!-- Logos de Clientes -->
-  <h3 style="font-size:24px; color:#1e3a8a; margin-bottom:20px;">Nossos Clientes</h3>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:40px; margin-bottom:40px;">
-    <img src="https://via.placeholder.com/120x50?text=TechSolutions" alt="TechSolutions" style="height:50px;">
-    <img src="https://via.placeholder.com/120x50?text=AutoParts" alt="AutoParts" style="height:50px;">
-    <img src="https://via.placeholder.com/120x50?text=LogiExpress" alt="LogiExpress" style="height:50px;">
+  <h3>Nossos Clientes</h3>
+  <div class="logos">
+    <div class="logo">TechSolutions</div>
+    <div class="logo">AutoParts</div>
+    <div class="logo">LogiExpress</div>
+    <div class="logo">DataCorp</div>
+    <div class="logo">WebFlow</div>
   </div>
 
-  <!-- Métricas -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; max-width:900px; margin:0 auto;">
-    <div>
-      <h3 style="font-size:36px; color:#22c55e; margin-bottom:5px;">50+</h3>
+  <div class="metricas">
+    <div class="metrica">
+      <h3>50+</h3>
       <p>Empresas Automatizadas</p>
     </div>
-    <div>
-      <h3 style="font-size:36px; color:#22c55e; margin-bottom:5px;">1200+</h3>
+    <div class="metrica">
+      <h3>1200+</h3>
       <p>Processos Otimizados</p>
     </div>
-    <div>
-      <h3 style="font-size:36px; color:#22c55e; margin-bottom:5px;">95%</h3>
+    <div class="metrica">
+      <h3>95%</h3>
       <p>Satisfação dos Clientes</p>
     </div>
   </div>
